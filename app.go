@@ -19,7 +19,7 @@ func handler(writer http.ResponseWriter, req *http.Request) {
 	if(err != nil) {
 		log.Fatal(err)
 	}
-	fmt.Fprintf(writer, strconv.FormatFloat(af/bf, 'g', 10, 64))
+	fmt.Fprintf(writer, strconv.FormatFloat(af/bf, 'g', 100, 64))
 }
 
 func main () {
